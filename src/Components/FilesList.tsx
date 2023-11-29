@@ -22,6 +22,8 @@ interface Props {
     listLoading: boolean;
     list: {
         rekognitionid: string;
+        dept:string,
+        employeeId:string,
         firstName: string;
         lastName: string;
         fileKey: string;
@@ -85,10 +87,16 @@ export function FilesList({ list = [], fileUploadedSignal, listLoading, setListL
                 </Skeleton>
             </Table.Td>
             <Table.Td>
+                <Skeleton visible={listLoading}><Text size={'md'} fw={500}>{element.employeeId}</Text></Skeleton>
+            </Table.Td>
+            <Table.Td>
                 <Skeleton visible={listLoading}><Text size={'md'} fw={500}>{element.firstName}</Text></Skeleton>
             </Table.Td>
             <Table.Td>
                 <Skeleton visible={listLoading}><Text size={'md'} fw={500}>{element.lastName}</Text></Skeleton>
+            </Table.Td>
+            <Table.Td>
+                <Skeleton visible={listLoading}><Text size={'md'} fw={500}>{element.dept}</Text></Skeleton>
             </Table.Td>
             <Table.Td>
                 <Skeleton visible={listLoading}>
@@ -116,8 +124,10 @@ export function FilesList({ list = [], fileUploadedSignal, listLoading, setListL
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th>User</Table.Th>
+                        <Table.Th>Employee Id</Table.Th>
                         <Table.Th>First Name</Table.Th>
                         <Table.Th>Last Name</Table.Th>
+                        <Table.Th>Department</Table.Th>
                         <Table.Th>Registered At</Table.Th>
                         <Table.Th></Table.Th>
                     </Table.Tr>

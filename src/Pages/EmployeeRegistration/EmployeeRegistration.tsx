@@ -46,6 +46,7 @@ export function EmployeeRegistration() {
   const [fileUpload, setFileUpload] = useState<File | null>(null);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [employeeId,setEmployeeId] = useState("")
   const [enableSubmit,setEnableSubmit] = useState(true)
 
   const fileUploadedSignal = async () => {
@@ -92,7 +93,7 @@ export function EmployeeRegistration() {
     console.log(firstName,lastName)
 
     await fetch(
-      `https://jknhddpe08.execute-api.us-east-2.amazonaws.com/dev/employee.images.store/${firstName.trim()}_${lastName.trim()}.jpeg`,
+      `https://jknhddpe08.execute-api.us-east-2.amazonaws.com/dev/employee.images.store/${firstName.trim()}_${lastName.trim()}_${employeeId}_${dept}.jpeg`,
       {
         method: "PUT",
         headers: {
@@ -184,16 +185,16 @@ export function EmployeeRegistration() {
               label="Employee ID"
               placeholder="Enter the Employee's ID"
               classNames={classes}
-              value={lastName}
+              value={employeeId}
               onChange={(e) => {
-                setLastName(e.target.value);
+                setEmployeeId(e.target.value);
               }}
             />
 
             <Select
               mt="md"
               comboboxProps={{ withinPortal: true }}
-              data={["Tech", "Marketing", "Finance", "HR"]}
+              data={["Technical", "Marketing", "Finance", "HumanResource"]}
               
               defaultChecked
               placeholder="Select the Employee's Department"
