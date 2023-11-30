@@ -11,10 +11,10 @@ Facialyst, an innovative facial recognition system designed for efficient employ
 ### Demo
 Youtube Video: [Facialyst Demo]()
 
-Web Application: [Live Link]()
+Web Application: [Live Link](https://facialyst.userdrive.store/)
 
 ### AWS Architecture of the project
-![CloudProject1](https://user-images.githubusercontent.com/39228894/67639369-262c1f80-f8ac-11e9-8f90-4edd92196087.jpg)
+![CloudProject1](./github//arch.png)
 
 ### AWS Components to be setup
 
