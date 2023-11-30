@@ -58,7 +58,7 @@ export function Navbar() {
 
       <div className={classes.footer}>
 
-        <a href="#" className={classes.link} onClick={(event) => event.preventDefault()}>
+        <a href="/" className={classes.link}>
           <IconLogout className={classes.linkIcon} stroke={1.5} />
           <span>Logout</span>
         </a>
