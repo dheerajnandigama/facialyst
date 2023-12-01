@@ -9,9 +9,9 @@
 Facialyst, an innovative facial recognition system designed for efficient employee attendance tracking and insightful analysis, seamlessly integrates with established attendance management tools. Leveraging AWS Rekognition service to recognization facial features. The project benefits from robust cloud infrastructure to provide authentication, statistics and employee logs all added to a clean and elegent modern UI. This project is the 3 tier web application using various AWS service resources. The application manages various components to provide a highly available, scalable, cost effective solution to securely back up data on to Amazon S3 and CloudFront.
 
 ### Demo
-Youtube Video: [Facialyst Demo]()
+Youtube Video: [Facialyst Demo](https://youtu.be/4FgeuRZqMig)
 
-Web Application: [Live Link](https://facialyst.userdrive.store/)
+Web Application URL: [Live Link](https://facialyst.userdrive.store/)
 
 ### AWS Architecture of the project
 ![CloudProject1](./github//arch.png)
